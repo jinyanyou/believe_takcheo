@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>탁처의 갸루침</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="탁처의 갸루침 홈">
+        <span class="brand-mark">탁</span>
+        <span>탁처의 갸루침</span>
+      </a>
+      <nav class="site-nav" aria-label="주요 메뉴">
+        <a href="#oracle">오늘</a>
+        <a href="#counsel">상담</a>
+        <a href="#sutra">경전</a>
+        <a href="#mandala">만다라</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow">진지한 척하는 생활 밀착 깨달음</p>
+          <h1 id="hero-title">탁처의 <br class="desktop-title-break" />갸루침</h1>
+          <p class="hero-text">
+            집착을 내려놓되, 쿠폰 만료일은 기억하라. 탁처가 오늘의 현타를
+            장엄하게 가볍게 다뤄준다.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#oracle">오늘의 갸루침</a>
+            <a class="button ghost" href="#counsel">고민 맡기기</a>
+          </div>
+        </div>
+        <figure class="hero-visual" aria-label="탁처 상징 이미지">
+          <img src="logo/logo.jpg" alt="탁처의 갸루침 로고" />
+        </figure>
+      </section>
+
+      <section id="oracle" class="band oracle-band" aria-labelledby="oracle-title">
+        <div class="section-head">
+          <p class="eyebrow">오늘의 갸루침</p>
+          <h2 id="oracle-title">새로고침보다 나은 한마디</h2>
+        </div>
+        <article class="oracle-card">
+          <p id="teachingText" class="teaching-text"></p>
+          <div class="card-actions">
+            <button id="newTeaching" class="button primary" type="button">
+              새 갸루침 받기
+            </button>
+            <button id="copyTeaching" class="button icon-button" type="button" aria-label="갸루침 복사">
+              복사
+            </button>
+          </div>
+        </article>
+      </section>
+
+      <section id="counsel" class="band counsel-band" aria-labelledby="counsel-title">
+        <div class="section-head">
+          <p class="eyebrow">고민 상담소</p>
+          <h2 id="counsel-title">고민을 넣으면 탁처가 돌려준다</h2>
+        </div>
+        <div class="counsel-layout">
+          <form id="worryForm" class="worry-form">
+            <label for="worryInput">지금 마음에 걸리는 것</label>
+            <textarea
+              id="worryInput"
+              name="worry"
+              rows="5"
+              placeholder="예: 과제하기 싫고 배는 고픈데 돈도 없다"
+            ></textarea>
+            <button class="button primary" type="submit">탁처에게 묻기</button>
+          </form>
+          <article class="answer-panel" aria-live="polite">
+            <p class="answer-label">탁처의 답</p>
+            <p id="answerText">
+              고민은 비워져 있을 때 가장 크게 울린다. 한 줄만 적어도 이미
+              수행은 시작되었다.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="sutra" class="band sutra-band" aria-labelledby="sutra-title">
+        <div class="section-head">
+          <p class="eyebrow">탁처 경전</p>
+          <h2 id="sutra-title">장엄하지만 사소한 장과 절</h2>
+        </div>
+        <div id="sutraList" class="sutra-list" aria-label="탁처 경전 목록"></div>
+      </section>
+
+      <section id="mandala" class="band mandala-band" aria-labelledby="mandala-title">
+        <div class="section-head">
+          <p class="eyebrow">탁처 만다라</p>
+          <h2 id="mandala-title">오늘의 번뇌를 누르라</h2>
+        </div>
+        <div class="mandala">
+          <div class="mandala-center">
+            <img src="logo/takcheo_remove.png" alt="" aria-hidden="true" />
+          </div>
+          <div class="topic-ring" aria-label="번뇌 주제"></div>
+        </div>
+        <p id="mandalaText" class="mandala-text" aria-live="polite">
+          주제를 누르면 해당 번뇌에 맞는 갸루침이 열린다.
+        </p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>탁처의 갸루침은 사소한 일상을 크게 말하는 농담 사이트입니다.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
